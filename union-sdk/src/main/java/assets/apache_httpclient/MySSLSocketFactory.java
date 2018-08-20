@@ -1,4 +1,4 @@
-package com.unionpay.acp.sdk;
+package assets.apache_httpclient;
 
 import java.io.IOException;
 import java.net.InetAddress;

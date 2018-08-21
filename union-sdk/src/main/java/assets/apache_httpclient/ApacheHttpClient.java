@@ -62,7 +62,7 @@ public class ApacheHttpClient {
 			}
 			URL uRL = new URL(url);
 			//测试环境配置不验证SSL证书（如果接银联生产环境需要验证SSL证书，可以注释以下两行代码）
-			Protocol myhttps = new Protocol(uRL.getProtocol(), new com.unionpay.acp.sdk.MySSLSocketFactory(),-1 == uRL.getPort()?443:uRL.getPort());
+			Protocol myhttps = new Protocol(uRL.getProtocol(), new MySSLSocketFactory(),-1 == uRL.getPort()?443:uRL.getPort());
 			Protocol.registerProtocol("https", myhttps);
 			
 			httpclient = new HttpClient();
@@ -105,7 +105,7 @@ public class ApacheHttpClient {
 			
 			URL uRL = new URL(url);
 			//测试环境配置不验证SSL证书（如果接银联生产环境需要验证SSL证书，可以注释以下两行代码）
-			Protocol myhttps = new Protocol(uRL.getProtocol(), new com.unionpay.acp.sdk.MySSLSocketFactory(),-1 == uRL.getPort()?443:uRL.getPort());
+			Protocol myhttps = new Protocol(uRL.getProtocol(), new MySSLSocketFactory(),-1 == uRL.getPort()?443:uRL.getPort());
 			Protocol.registerProtocol("https", myhttps);
 			
 			httpclient = new HttpClient();

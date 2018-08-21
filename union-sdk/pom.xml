@@ -6,7 +6,7 @@
 
     <groupId>com.unionpay.acp</groupId>
     <artifactId>SDK</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->

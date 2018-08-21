@@ -32,7 +32,7 @@ import org.apache.commons.lang.StringUtils;
  *
  */
 public class SDKConfig {
-	public static final String FILE_NAME = "acp_sdk.properties";
+	public static final String FILE_NAME = "cfg.properties";
 	/** 前台请求URL. */
 	private String frontRequestUrl;
 	/** 后台请求URL. */
